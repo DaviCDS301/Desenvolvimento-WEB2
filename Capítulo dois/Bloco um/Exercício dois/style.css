@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+p.note{
+    color: red;
+}
+li[value="2"]{
+    color: black;
+}
+#id-selector-demo{
+    color: green;
+}
+li[value="4"]{
+    color: blue;
+}
+li[value="5"]{
+    color: black;
+}
+ol{
+    text-align: center;
+}
