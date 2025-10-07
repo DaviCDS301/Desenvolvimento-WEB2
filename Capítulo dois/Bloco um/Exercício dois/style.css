@@ -7,6 +7,7 @@ h2{
 
 p.note{
     color: red;
+    text-align: center;
 }
 li[value="2"]{
     color: black;
