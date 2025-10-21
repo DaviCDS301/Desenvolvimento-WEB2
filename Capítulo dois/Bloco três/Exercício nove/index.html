@@ -3,28 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Cascade</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Escreva seu CSS Aqui */
+    .flag{
+      position: relative;
+      width: 900px;
+      height: 600px;
+      background-color: #ce1126;
+      text-align: center;
+      color: #ffffff;
+      font-size: 60px;
+    }
+
+    div{
+      color: #000000;
+      width: 900px;
+      height: 300px;
+      position: absolute;
+      background-color: #002868;
+      margin-top: 2%;
+    }
+
+    body>.flag>div>div{
+      width: 200px;
+      height: 200px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 355px;
+      color: #000000;
+      font-size: 60px;
+      position: relative;
+    }
+
+    body>.flag>div>div>p{
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+
+
+  </style>
 </head>
 
 <body>
-
-  <div id="outer-box" class="box">
-    <div class="box">
-      <p>Yellow Text</p>
-      <div class="box inner-box">
-        <p class="white-text">White Text</p>
-      </div>
-    </div>
-
-    <div class="box">
-      <p>Yellow Text</p>
-      <div class="box inner-box">
-        <p class="white-text">White Text</p>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
       </div>
     </div>
   </div>
-  
 </body>
 
 </html>
