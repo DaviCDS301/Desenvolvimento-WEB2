@@ -42,3 +42,17 @@ btnCriar.addEventListener("click", function() {
 
     document.getElementById("conteiner").appendChild(novo);
 } );
+
+const btnRemover = document.getElementById("btnRemover");
+
+btnRemover.addEventListener("click", function() {
+    const conteiner = document.getElementById("conteiner");
+
+    const itens = conteiner.querySelectorAll("p");
+
+    if (itens.length > 0){
+        itens[itens.length - 1].remove();
+    }else {
+        alert("Não há mais parágrafos para remover")
+    }
+} );
