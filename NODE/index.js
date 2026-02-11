@@ -1,13 +1,4 @@
-let nome = process.argv[2];
-let idade = process.argv[3];
+const calc = require("./calculadora")
 
-console.log("===== Cadastro do Agente =====");
-
-console.log("Nome:", nome);
-console.log("Idade:", idade);
-
-if (idade >= 18) {
-    console.log("Status: Agente autorizado");
-} else {
-    console.log("Status: Acesso restrito");
-}
+console.log(calc.somar(2,3));
+console.log(calc.subtrair(2,3));
