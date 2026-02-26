@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Produtos</title>
+</head>
+<body>
+
+  <h1>Lista de Produtos</h1>
+
+  <button onclick="carregarProdutos()">
+    Carregar Produtos
+  </button>
+
+  <ul id="lista"></ul>
+
+  <script>
+    function carregarProdutos() {
+      fetch("http://localhost:3000/produtos")
+        .then(response => response.json())
+        .then(produtos => {
+          const lista = document.getElementById("lista");
+          lista.innerHTML = "";
+
+          produtos.forEach(produto => {
+            const item = document.createElement("li");
+            item.textContent = produto.nome + " - R$ " + produto.preco;
+            lista.appendChild(item);
+          });
+        })
+        .catch(error => {
+          console.error("Erro:", error);
+        });
+    }
+  </script>
+
+</body>
+</html>
