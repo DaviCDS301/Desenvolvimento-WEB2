@@ -6,9 +6,9 @@ app.use(express.json());
 app.use(cors());
 
 const produtos = [
-    {id: 1, nome: "Pudim", preco: 75},
-    {id: 2, nome: "Pão", preco: 20},
-    {id: 3, nome: "salgadinho", preco: 35}
+    {id: 1, nome: "Harry Potter e o Cálice de fogo", preco: 75},
+    {id: 2, nome: "Stranger Things - Cidade nas Trevas", preco: 20},
+    {id: 3, nome: "Star Wars - Trilogy", preco: 35}
 ];
 
 app.get("/produtos", (req, res) => {
